@@ -131,10 +131,7 @@ Otros
   width: 200px;
   height: 200px;
   margin: 0 auto 50px;
-  background-image: url("../assets/img/Bitcoin.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../assets/img/Bitcoin.svg") no-repeat center/cover;
 }
 
 .exchange-container__title h2 {
