@@ -150,17 +150,18 @@ Otros
   color: #757575;
 }
 
-.exchange-container__tableTitle {
-  position: absolute;
-  top: -30px;
-  left: 10px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 2.3rem;
-  color: var(--bitcoin-orange);
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+table th,
+table td {
+  border: 0.5px solid rgb(184, 184, 184);
 }
 
-.exchange-container__table {
+/* section: table */
+
+.table__container {
   position: relative;
   width: 60%;
   min-width: 200px;
@@ -175,23 +176,33 @@ Otros
   border-radius: 8px;
 }
 
-.table tr:not(:last-child) td {
+.table__title {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+}
+
+/* .table tr:not(:last-child) td {
   border-bottom: 0.1px grey solid;
 }
 
 .table td:not(:last-child) {
   border-right: 0.1px grey solid;
-}
+} */
 
 .exchange__table-data {
-  padding-left: 13px;
+  padding-left: 11px;
   width: 100vw;
   height: 39px;
   text-align: start;
 }
 
 .table-data__left {
-  padding-right: 12px;
+  padding-right: 7px;
   font-size: 1.4rem;
   font-weight: 400;
   text-align: center;
@@ -230,4 +241,106 @@ Otros
 
 .background--color-comision {
   background-color: var(--soft-blue);
+}
+
+.--hide {
+  display: none;
+}
+
+.table__container--Comisiones-title {
+  color: var(--secondary-blue);
+}
+
+/* Section: product-detail */
+
+.product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background: var(--black);
+  color: var(--just-white);
+}
+
+.product-detail__batataLogo {
+  position: absolute;
+  top: calc(0% - 12.5px);
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 25px;
+  background: url("../assets/icons/batata.svg");
+}
+
+.product-detail__title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.product-detail__title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+.product-detail__title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.product-detail__card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background: var(--warm-black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.card__icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.card__icon--clock {
+  background: url("../assets/icons/clock.svg") no-repeat center/cover;
+}
+
+.card__icon--eye {
+  background: url("../assets/icons/eye.svg") no-repeat center/cover;
+}
+
+.card__icon--dollar {
+  background: url("../assets/icons/dollar-sign.svg") no-repeat center/cover;
+}
+
+.card__icon--checkedCircle {
+  background: url("../assets/icons/check-circle.svg") no-repeat center/cover;
+}
+
+.card__title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+
+.card__body {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
 }
