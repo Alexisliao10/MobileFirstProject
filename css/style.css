@@ -344,3 +344,65 @@ table td {
   line-height: 1.8rem;
   color: #808080;
 }
+
+.bitcoin-image {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background: url("../assets/img/bitcoinbaby2x.jpg") no-repeat center/cover;
+  text-align: center;
+}
+
+.bitcoin-image h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+/* seccion: plans  */
+
+.plans {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+  background: #e5e5e5;
+}
+
+.plans__title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto 45px;
+}
+
+.plans__title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(black);
+}
+
+.plans__title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+.plans__card {
+  position: relative;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  background: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
