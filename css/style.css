@@ -153,6 +153,7 @@ Otros
 table {
   border-collapse: collapse;
   border-style: hidden;
+  background-color: var(--just-white);
 }
 table th,
 table td {
@@ -161,19 +162,32 @@ table td {
 
 /* section: table */
 
+.exchange-container__tableDiv {
+  display: flex;
+  padding: 0 33px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.exchange-container__tableDiv::-webkit-scrollbar {
+  display: none;
+}
+
 .table__container {
   position: relative;
   width: 60%;
   min-width: 200px;
   max-width: 260px;
-  margin: 55px auto 0;
+  margin: 55px 32px 0;
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
   color: var(--grey);
-  background-color: var(--just-white);
+  /* background-color: var(--just-white); */
   border-radius: 8px;
+  scroll-snap-align: center;
 }
 
 .table__title {
@@ -184,6 +198,10 @@ table td {
   font-weight: bold;
   line-height: 2.3rem;
   color: var(--bitcoin-orange);
+}
+
+.table__container--Comisiones-title {
+  color: var(--secondary-blue);
 }
 
 /* .table tr:not(:last-child) td {
@@ -245,10 +263,6 @@ table td {
 
 .--hide {
   display: none;
-}
-
-.table__container--Comisiones-title {
-  color: var(--secondary-blue);
 }
 
 /* Section: product-detail */
@@ -394,15 +408,99 @@ table td {
   color: #757575;
 }
 
+.plans__container {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.plans__container::-webkit-scrollbar {
+  display: none;
+}
+
 .plans__card {
   position: relative;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 20px 0;
   padding: 0 15px;
   background: var(--just-white);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+  scroll-snap-align: center;
+}
+
+.plans__recomendation {
+  position: absolute;
+  display: flex;
+  width: 120px;
+  height: 31px;
+  justify-content: center;
+  align-items: center;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  background: var(--bitcoin-orange);
+  border-radius: 8px;
+  color: var(--just-white);
+}
+
+.plans-info__title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.plans-info__price {
+  position: relative;
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 6.3rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.3rem;
+}
+
+.plans-info__price::before {
+  position: absolute;
+  top: 20%;
+  left: calc(50% - 40px);
+  content: "$";
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.plans-info__saving {
+  font-size: 1.2rem;
+  color: #757575;
+}
+
+.plans-info__ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background: var(--off-white);
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  font-family: "DM Sans", sans-serif;
+  color: var(--black);
+}
+
+.plans-info__ca-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../assets/icons/orange-right-arrow.svg") no-repeat
+    center/cover;
+  vertical-align: text-bottom;
 }
