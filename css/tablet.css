@@ -1,0 +1,23 @@
+/*
+Posicionamiento
+box model
+Tipografía
+Estilos Visuales
+Otros
+*/
+
+.exchange-container__tableDiv {
+  justify-content: center;
+}
+
+.product-detail__cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 770px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.plans__container {
+  justify-content: center;
+}
